@@ -1,0 +1,149 @@
+/* GLOBAL ============================  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  /* 1rem = 16px (User Agent) = 100% (User Agent) */
+  font-size: 62.5%; /* 10px */
+  text-decoration: none;
+}
+
+html {
+  background-color: #b4b897;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #f1e9e5;
+  width: min(90vw, 450px);
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  margin: auto;
+}
+
+.inactive {
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+}
+
+/* TITLES & TEXTS ============================  */
+
+h1 {
+  color: #464660;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 2px;
+  border: 0;
+  padding: 5px 8px;
+
+  color: #f1e9e5;
+  background-color: #368b85;
+  font-size: 3.2rem;
+  text-align: center;
+
+  width: 90%;
+}
+
+#error {
+  display: flex;
+  margin: 0 auto;
+  background-color: #b4b897;
+  width: 100%;
+
+  font-size: 1.6rem;
+  color: #464660;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* IMAGES ============================  */
+
+
+img {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  margin: 50px auto;
+}
+
+.return img {
+  display: flex;
+  margin: 50px auto;
+  width: 10rem;
+  height: 10rem;
+}
+
+/* FORM ============================  */
+
+
+.inputGroup {
+  display: flex;
+  color: #464660;
+}
+
+label {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+input {
+  border: 0;
+  font-size: 2rem;
+  color: #464660;
+  width: 40px;
+  text-align: center;
+}
+
+/* BUTTON ============================  */
+
+
+.button {
+  display: flex;
+  margin: 0 auto;
+
+  font-size: 2rem;
+  color: #f1e9e5;
+
+  background: #368b85;
+  border-radius: 2px;
+  border: 0;
+  padding: 5px 8px;
+
+  margin-top: 20px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.button:hover{
+    opacity: 0.8;
+
+}
+
+.return .button {
+  width: 20rem;  
+}
+
+/* RESPONSIVE ============================  */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
